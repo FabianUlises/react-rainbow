@@ -3,7 +3,12 @@ import './App.css';
 import ColorBlock from './ColorBlock';
 
 function App() {  
-  let colors = ['violet', 'blue', 'lightblue', 'green', 'greenyellow', 'yellow', 'orange', 'red']
+  let [colors, setColors] = useState ([
+    'violet', 'blue',
+    'lightblue', 'green',
+    'greenyellow', 'yellow',
+    'orange', 'red'
+  ])
 
   let colorMap = colors.map((color, i) => {
     return (
